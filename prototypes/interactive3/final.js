@@ -14,10 +14,13 @@ $(document).ready(function () {
             //hide for prototype
             $('h2#housein').hide();
             $('h2#lroomin').hide();
-            $('h2#studioin').hide();
+            $('h2#studin').hide();
 
             //hide dialogue/script stuff
             $('div').hide();
+
+            //video next button
+            $('#videonext').hide();
 
             //hide sections before they show up
             $('section#introduction').hide();
@@ -50,13 +53,13 @@ $(document).ready(function () {
                     $('#mainmenu').css('display', 'none');
                     $('#introduction').fadeIn(1000);
                     $('#introvid').get(0).play();
-                    $('#introvid').addClass('on');
+                    $('video').addClass('show');
 
                     $('#skipintro').click(function () {
                         $('#introduction').hide();
                         $('#introvid').get(0).pause();
-                        $('#introvid').removeClass('on');
-                        $('#introvid').removeClass('off');
+                        $('video').removeClass('show');
+                        $('video').addClass('hide');
                         $('#bgmusic').get(0).play();
                         $('#carscene').delay(2000).fadeIn(1000);
                         $('#textbox').delay(2000).animate({
@@ -69,30 +72,31 @@ $(document).ready(function () {
                             startDelay: 4000
                         });
                         $('#carnext').delay(5000).fadeIn(1000);
-
                     });
 
-                    if ($('#introvid').hasClass('off')) {} else {
-                        $('#introduction').delay(34000).fadeOut(1000, function () {
-                            $('#carscene').fadeIn(1000);
-                            $('#bgmusic').get(0).play();
-                            $('#textbox').animate({
-                                opacity: 1
-                            });
-                            $("span#dialogue1").typed({
-                                stringsElement: $('#script1'),
-                                typeSpeed: 20,
-                                backDelay: 4500,
-                                startDelay: 4000
-                            });
+                    $('#videonext').delay(34000).fadeIn(1000);
+
+                    $('#videonext').click(function () {
+                        $('#introduction').fadeOut(1000);
+                        $('#carscene').delay(1000).fadeIn(1000);
+                        $('#bgmusic').get(0).play();
+                        $('#textbox').animate({
+                            opacity: 1
                         });
-                        
-                        $('#carnext').delay(5000).fadeIn(1000);
+                        $("span#dialogue1").typed({
+                            stringsElement: $('#script1'),
+                            typeSpeed: 20,
+                            backDelay: 4500,
+                            startDelay: 4000
+                        });
+                    });
 
-                        //$('#carskip').delay(2400).fadeIn(1000);
+                    $('#carnext').delay(5000).fadeIn(1000);
 
-                    };
+                    //$('#carskip').delay(2400).fadeIn(1000);
+
                 });
+
 
 
                 $('.nextbtn').hover(function () {
@@ -137,7 +141,7 @@ $(document).ready(function () {
                     $('#hallwaynext').delay(5000).fadeIn(1000);
                 });
 
-                $('#hallwaynext').one("click", function () {
+                $('#hallwaynext').click(function () {
                     $('section#hallway').fadeOut(1000);
                     $('#thirdp').fadeOut(function () {
                         $("span#dialogue4").typed({
@@ -152,7 +156,7 @@ $(document).ready(function () {
                     $('#lroomback').delay(5000).fadeIn(1000);
                 });
 
-                $('#lroomback').one("click", function () {
+                $('#lroomback').click(function () {
                     $('section#livingroom').fadeOut(1000);
                     $('#fourthp').fadeOut(function () {
                         $("span#dialogue3").typed({
@@ -167,7 +171,7 @@ $(document).ready(function () {
                 });
 
 
-            });
+            }); //end beginning click function
         }); //end window ready function
 
 
