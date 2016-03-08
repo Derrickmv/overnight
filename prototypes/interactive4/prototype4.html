@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overnight</title>
+
+    <!--CSS Link-->
+    <link type="text/css" href="final.css" rel="stylesheet">
+
+    <!--js links-->
+
+    <!--jQuery link first-->
+    <script src="js/jquery.js"></script>
+
+    <!--Typed link-->
+    <script src="js/typed.js"></script>
+
+    <!-- Custom Javascript Link-->
+    <script type="text/javascript" src="final.js"></script>
+
+</head>
+
+<body>
+
+    <div id="script1">
+        <p>Hello! This is the OVERNIGHT prototype.</p>
+        <p>Remember your tasks!</p>
+    </div>
+
+    <div id="script2">
+        <p>Arrows are your way of navigating through the game.</p>
+    </div>
+    <div id="script3">
+        <p>Go on to the living room.</p>
+    </div>
+    <div id="script4">
+        <p>Try clicking on the paintings.</p>
+    </div>
+    <div id="script5">
+        <p>Studio. YOU'VE REACHED THE END OF THIS PROTOTYPE!</p>
+        <p>Please fill out the questionnaire! Thank you for playing!</p>
+    </div>
+    
+    <!--Main Menu-->
+    <section id="mainmenu">
+
+        <h5 id="overnight">OVERNIGHT</h5>
+
+        <nav id="menu">
+            <h1 id = "start" class= "menubutton">START</h1>
+            <h1 id = "instructionbtn" class="menubutton">INSTRUCTIONS</h1>
+            <h1 class="menubutton">ABOUT THE GAME</h1>
+        </nav>
+
+    </section>
+
+    <!--Instructions-->
+    <section id = "instructions">
+        <h3>INSTRUCTIONS</h3>
+        <h4 class = "close">X</h4>
+        <p>Find out what happened to your father!</p>
+        
+        <p>Click on clues that are shown with a white feathered highlight. Words that are <b>bolded</b> contain the definition its definition. Just hover over it! Arrows indicate rooms that can be accessed. </p>
+       
+        <img src = "images/instruction-1.jpg" alt = "instruction image 1" />
+        <img src = "images/instruction-2.jpg" alt = "instruction image 2" />
+    </section>
+
+
+    <!--Dialogue-->
+    <section id="textbox">
+        <p id="firstp"><span id='dialogue1'></span>
+        </p>
+        <p id='secondp'><span id='dialogue2'></span>
+        </p>
+        <p id='thirdp'><span id='dialogue3'></span>
+        </p>
+        <p id='fourthp'><span id='dialogue4'></span>
+        </p>
+        <p id='fifthp'><span id='dialogue5'></span>
+        </p>
+    </section>
+
+    <!--Intro Video-->
+    <section id="introduction">
+        <button id="skipintro" class="skipbtn">skip</button>
+        <video id="introvid" width="960" height="700">
+            <source src="videos/introvideo.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+        <h2 id = "videonext">next</h2>
+    </section>
+
+    <!--Car Scene-->
+    <section id="carscene">
+        <img src = "images/carscene-inside.png" alt = "car inside" />
+        <button class="skipbtn" id="carskip">skip</button>
+        <img class="nextbtn" id="carnext" src="images/rightarrow.gif" alt="arrow" />
+    </section>
+
+
+    <!--House Scene-->
+    <section id="house">
+        <h2 id="housein">enter</h2>
+        <img class="nextbtn" id="housenext" src="images/rightarrow.gif" alt="arrow" />
+    </section>
+
+    <!--Hallway-->
+    <section id="hallway">
+        <h2 id="lroomin">living room</h2>
+        <img class="nextbtn" id="hallwaynext" src="images/rightarrow.gif" alt="arrow" />
+    </section>
+
+    <!--Living Room-->
+    <section id="livingroom">
+        <h2 id="studin">studio</h2>
+        
+        <img src = "images/lroom-smallpainting.png" alt = "living room small painting" id = "lr-small" />
+        
+        <img src = "images/lroom-largepainting.png" alt = "living room large painting" id = "lr-large" />
+        
+
+        <img class="nextbtn" id="lroomnexts" src="images/rightarrow.gif" alt="arrow" />
+        <img class="backbtn" id="lroomback" src="images/leftarrow.gif" alt="arrow" />
+    </section>
+
+    <!--Studio-->
+    <section id = "studio">
+        <img class="backbtn" id="studioback" src="images/leftarrow.gif" alt="arrow" />
+    </section>
+
+    <!--Bathroom
+    <section id = "livingroom">
+        <h2 id="lroomin">living room</h2>
+        
+    </section>-->
+
+    <!--Upstairs Hallway
+    <section id = "livingroom">
+        <h2 id="lroomin">living room</h2>
+        
+    </section>-->
+
+    <!--Master Bedroom
+    <section id = "livingroom">
+        <h2 id="lroomin">living room</h2>
+        
+    </section>-->
+    
+    
+    <!--DESCRIPTIONS-->
+    <section id = "portrait" class = "definitions">
+    <h3>Portrait</h3>
+        <h5 class = "close">X</h5>
+        <img src = "images/lroom-smallpainting.png" alt = "living room small painting" />
+        <p class = "descriptions">"Gross, how does dad come up with this stuff? This <b id = "por-bold">portrait</b> totally freaks me out."</p>
+        
+        <p class = "descriptions" id = "portrait-d">portrait: a visual depiction, whether that be a painting, drawing, engraving or photograph, of a person that is usually from the shoulder up.</p>
+    </section>
+    
+    <section id = "landscape" class = "definitions">
+    <h3>Landscape</h3>
+        <h5 class = "close">X</h5>
+        <img src = "images/lroom-largepainting.png" alt = "living room small painting" />
+        <p class = "descriptions">"Freaky. It's like that figure is following me. It looks like a <b id = "land-bold">landscape</b> painting of the forest we used to go camping at. Dad, please be okay..."</p>
+        
+        <p class = "descriptions" id = "landscape-d">landscape: a depiction of an expanse of scenery. the visual features of an area.</p>
+    </section>
+    
+    
+    
+    <!--AUDIO-->
+
+    <audio id="bgmusic" loop>
+        <source src="audio/ghostpocalypse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+
+
+
+
+</body>
+
+</html>
