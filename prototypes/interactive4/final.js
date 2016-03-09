@@ -69,7 +69,7 @@ $(document).ready(function () {
             
             
             //start game
-            $('#start').one("click", function () {
+            $('#start').click(function () {
 
                 $('#overnight').fadeOut(1200);
                 $('.menubutton').fadeOut(1000);
