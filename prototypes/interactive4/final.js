@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(window).ready(function () {
 
             var vid = $('#introvid');
-
+            
             //hide for prototype
             $('h2#housein').hide();
             $('h2#lroomin').hide();
@@ -31,11 +31,11 @@ $(document).ready(function () {
             $('section#hallway').hide();
             $('section#livingroom').hide();
             $('section#studio').hide();
-            
+
             //hide definitions sections before they show up
             $('section#portrait').hide();
             $('section#landscape').hide();
-            
+
             //hide actual definitions before they show up
             $('#portrait-d').hide();
             $('#landscape-d').hide();
@@ -60,14 +60,14 @@ $(document).ready(function () {
             $('#instructionbtn').click(function () {
                 $('#instructions').fadeIn(1000);
             });
-            
+
             //click to close button
-                $('.close').click(function () {
-                    $(this).parent().fadeOut(1000);
-                });
-                
-            
-            
+            $('.close').click(function () {
+                $(this).parent().fadeOut(1000);
+            });
+
+
+
             //start game
             $('#start').click(function () {
 
@@ -80,6 +80,7 @@ $(document).ready(function () {
                 }, 3000, function () {
                     $('#mainmenu').css('display', 'none');
                     $('#introduction').fadeIn(1000);
+                    $('#introvid').get(0).currentTime = 0;
                     $('#introvid').get(0).play();
                     $('video').addClass('show');
 
@@ -144,8 +145,8 @@ $(document).ready(function () {
                         $('.backbtn').attr('src', 'images/leftarrow.gif');
                     });
 
-                
-                
+
+
                 //car to house function
                 $('#carnext').one("click", function () {
                     $('section#carscene').fadeOut(1000);
@@ -172,7 +173,7 @@ $(document).ready(function () {
                             startDelay: 3400
                         });
                     });
-                $('section#hallway').delay(1200).fadeIn(2000);
+                    $('section#hallway').delay(1200).fadeIn(2000);
                     $('#hallwaynext').delay(5000).fadeIn(1000);
                 });
 
@@ -188,7 +189,7 @@ $(document).ready(function () {
                             startDelay: 3400
                         });
                     });
-            $('section#livingroom').delay(1200).fadeIn(2000);
+                    $('section#livingroom').delay(1200).fadeIn(2000);
                     $('#lroomnexts').delay(5000).fadeIn(1000);
                     $('#lroomback').delay(5000).fadeIn(1000);
                     $('#hallwaynext').fadeOut(1000);
@@ -207,7 +208,7 @@ $(document).ready(function () {
                             });
                         });
                     });
-                $('section#hallway').delay(1200).fadeIn(2000);
+                    $('section#hallway').delay(1200).fadeIn(2000);
                     $('#hallwaynext').delay(5000).fadeIn(1000);
                     $('#lroomback').fadeOut(1000);
                     $('#lroomnexts').fadeOut(1000);
@@ -225,13 +226,13 @@ $(document).ready(function () {
                             startDelay: 3400
                         });
                     });
-                $('section#studio').delay(1200).fadeIn(2000);
+                    $('section#studio').delay(1200).fadeIn(2000);
                     $('#studioback').delay(5000).fadeIn(1000);
                     $('#lroomback').fadeOut(1000);
                     $('#lroomnexts').fadeOut(1000);
                 });
 
-                
+
                 //studio to living room BACK function
                 $('#studioback').stop().click(function () {
                     $('section#studio').fadeOut(1000);
@@ -245,35 +246,35 @@ $(document).ready(function () {
                             });
                         });
                     });
-            $('section#livingroom').delay(1200).fadeIn(2000);
+                    $('section#livingroom').delay(1200).fadeIn(2000);
                     $('#lroomnexts').delay(5000).fadeIn(1000);
                     $('#lroomback').delay(5000).fadeIn(1000);
                     $('#studioback').fadeOut(1000);
                 });
-                
-                
+
+
                 //definition clicks
                 $('#lr-small').click(function () {
-                   $('#portrait').fadeIn(1000); 
+                    $('#portrait').fadeIn(1000);
                 });
-                
+
                 $('#lr-large').click(function () {
-                   $('#landscape').fadeIn(1000); 
+                    $('#landscape').fadeIn(1000);
                 });
-                
-                
+
+
             }); //end beginning click function
-            
-            
-            
+
+
+
             //show definition hover
             $('#por-bold').mouseover(function () {
-                        $('#portrait-d').fadeIn(1000);
-                    });
+                $('#portrait-d').fadeIn(1000);
+            });
             $('#land-bold').mouseover(function () {
-                        $('#landscape-d').fadeIn(1000);
-                    });
-            
+                $('#landscape-d').fadeIn(1000);
+            });
+
         }); //end window ready function
 
 

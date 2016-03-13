@@ -54,7 +54,6 @@ section#mainmenu {
 }
 
 section#instructions {
-    background-color: black;
     position:absolute;
     z-index:7;
 }
@@ -249,6 +248,15 @@ button.skipbtn {
 section#introduction button.skipbtn {
     top:30px;
     left:850px;
+}
+
+#instructions li {
+    font-size:20px;
+    font-family: 'freerideregular';
+    color:white;
+    width:800px;
+    margin-left:40px;
+    margin-top:20px;
 }
 
 p {
