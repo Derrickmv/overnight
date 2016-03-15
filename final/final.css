@@ -1,0 +1,694 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'draconian_typewriterregular';
+    src: url('draconiantypewritter001-webfont.eot');
+    src: url('draconiantypewritter001-webfont.eot?#iefix') format('embedded-opentype'), url('draconiantypewritter001-webfont.woff2') format('woff2'), url('draconiantypewritter001-webfont.woff') format('woff'), url('draconiantypewritter001-webfont.ttf') format('truetype'), url('draconiantypewritter001-webfont.svg#draconian_typewriterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'horrorhotel';
+    src: url('fonts/horrh___-webfont.eot');
+    src: url('fonts/horrh___-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/horrh___-webfont.woff2') format('woff2'), url('fonts/horrh___-webfont.woff') format('woff'), url('fonts/horrh___-webfont.ttf') format('truetype'), url('fonts/horrh___-webfont.svg#horrorhotel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freerideregular';
+    src: url('fonts/freeride-webfont.eot');
+    src: url('fonts/freeride-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/freeride-webfont.woff2') format('woff2'), url('fonts/freeride-webfont.woff') format('woff'), url('fonts/freeride-webfont.ttf') format('truetype'), url('fonts/freeride-webfont.svg#freerideregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    width: 960px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+}
+
+section {
+    width: 960px;
+    height: 700px;
+}
+
+section#mainmenu {
+    background: url(images/mainmenu-bg.gif);
+    z-index: 6;
+    position: absolute;
+    opacity: 0;
+}
+
+section#instructions {
+    position: absolute;
+    z-index: 7;
+}
+
+section#carscene {
+    background: url(images/carscene-bg.gif);
+    z-index: 0;
+    position: relative;
+}
+
+section#house {
+    background: url(images/house.jpg);
+}
+
+section#hallway {
+    background: url(images/hallway.jpg);
+}
+
+section#uphallway {
+    background: url(images/up-hallway.jpg);
+}
+
+section#livingroom {
+    background: url(images/livingroom.jpg);
+}
+
+section#studio {
+    background: url(images/studio.jpg);
+}
+
+section#masterroom {
+    background: url(images/masterroom.jpg);
+}
+
+section#bedroom {
+    background: url(images/bedroom.jpg);
+}
+
+section.definitions {
+    background-color: #121212;
+    position: absolute;
+    z-index: 55;
+    width: 860px;
+    height: 600px;
+    border-style: solid;
+    border-color: #828282;
+    border-width: 20px;
+    top: 30px;
+    left: 30px;
+    z-index: 99;
+}
+
+h5#overnight {
+    font-family: 'horrorhotel';
+    letter-spacing: .2em;
+    color: white;
+    z-index: 56;
+    position: absolute;
+    font-size: 240px;
+    width: 740px;
+    left: 110px;
+    top: 50px;
+    opacity: 0;
+    cursor: default;
+}
+
+nav#menu {
+    position: absolute;
+    top: 300px;
+    left: 290px;
+}
+
+h1.menubutton {
+    color: #840909;
+    z-index: 55;
+    width: 370px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 1;
+    letter-spacing: 0.1em;
+    font-family: 'freerideregular';
+    transition: 1s;
+    opacity: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+h1.menubutton:hover {
+    color: #8c4836;
+    transition: 0.5s;
+}
+
+.nextbtn {
+    z-index: 40;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.backbtn {
+    z-index: 41;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.upbtn {
+    z-index: 42;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#carnext {
+    top: 300px;
+    left: 900px;
+}
+
+#housenext {
+    top: 400px;
+    left: 455px;
+}
+
+#hallwaynext {
+    top: 300px;
+    left: 800px;
+}
+
+#hallwaynext-n {
+    top: 300px;
+    left: 800px;
+}
+
+#hallwayup {
+    top: 400px;
+    left: 40px;
+}
+
+#hallwayup-n {
+    top: 400px;
+    left: 40px;
+}
+
+#hallwaydown {
+    top: 350px;
+    left: 520px;
+}
+
+#lroomnexts {
+    top: 400px;
+    left: 800px;
+}
+
+#lroomnexts-n {
+    top: 400px;
+    left: 800px;
+}
+
+#lroomback {
+    top: 400px;
+    left: 20px;
+}
+
+#studioback {
+    top: 240px;
+    left: 20px;
+}
+
+#uphallup {
+    top: 320px;
+    left: 495px;
+}
+
+#uphallup-n {
+    top: 320px;
+    left: 495px;
+}
+
+#uphallback {
+    top: 500px;
+    left: 20px;
+}
+
+#bedback {
+    top: 300px;
+    left: 20px;
+}
+
+#mbedback {
+    top: 100px;
+    left: 890px;
+}
+
+#uphallnext {
+    top: 350px;
+    left: 800px;
+}
+
+#uphallnext-n {
+    top: 350px;
+    left: 800px;
+}
+
+.descriptions {
+    font-size: 20px;
+    width: 350px;
+    position: absolute;
+    top: 170px;
+    left: 440px;
+}
+
+h2 {
+    color: white;
+    font-family: 'freerideregular';
+    font-size: 30px;
+    z-index: 40;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+h2#videonext {
+    top: 300px;
+    left: 420px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+h2#restartgame {
+    top: 300px;
+    left: 310px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    width: 400px;
+}
+
+h3 {
+    color: white;
+    font-family: 'horrorhotel';
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 11px;
+}
+
+h4 {
+    font-family: 'freerideregular';
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 895px;
+}
+
+h4:hover {
+    color: #840909;
+}
+
+h5 {
+    font-family: 'freerideregular';
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 820px;
+}
+
+h5:hover {
+    color: #840909;
+}
+
+#textbox {
+    width: 750px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    margin: auto;
+    top: 550px;
+    left: 100px;
+    opacity: 0;
+    border-style: ridge;
+    border-color: #601d1d;
+    z-index: 50;
+}
+
+button.skipbtn {
+    font-family: 'freerideregular';
+    background: #601d1d;
+    padding: 5px;
+    border-style: none;
+    position: absolute;
+    z-index: 12;
+    opacity: 0.6;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+section#introduction button.skipbtn {
+    top: 30px;
+    left: 850px;
+}
+
+#instructions ul {
+    margin-top:60px;
+    margin-bottom:30px;
+}
+
+#instructions li {
+    font-size: 20px;
+    font-family: 'freerideregular';
+    color: white;
+    width: 800px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'freerideregular';
+    color: white;
+    opacity: 1;
+    padding: 15px;
+}
+
+footer {
+    position: absolute;
+    font-family: 'freerideregular';
+    font-size: 20px;
+    top: 640px;
+    left: 369px;
+}
+
+#carh {
+    top: 305px;
+    left: 810px;
+}
+
+#enterh {
+    top: 460px;
+    left: 430px;
+}
+
+#uphallin {
+    top: 450px;
+    left: 20px;
+}
+
+#uphallin-n {
+    top: 450px;
+    left: 20px;
+}
+
+#basein {
+    top: 400px;
+    left: 490px;
+}
+
+#lroomin {
+    top: 350px;
+    left: 780px;
+}
+
+#lroomin-n {
+    top: 350px;
+    left: 780px;
+}
+
+#studin {
+    top: 455px;
+    left: 777px;
+}
+
+#studin-n {
+    top: 455px;
+    left: 777px;
+}
+
+#lroomout {
+    top: 405px;
+    left: 70px;
+}
+
+#studout {
+    top: 245px;
+    left: 40px;
+    width: 200px;
+}
+
+#mroomin {
+    top: 370px;
+    left: 420px;
+    width: 200px;
+}
+
+#mroomin-n {
+    top: 370px;
+    left: 420px;
+    width: 200px;
+}
+
+#bdroomin {
+    top: 355px;
+    left: 686px;
+}
+
+#bdroomin-n {
+    top: 355px;
+    left: 686px;
+}
+
+#uphallout {
+    top: 505px;
+    left: 76px;
+}
+
+#bdroomout {
+    top: 305px;
+    left: 70px;
+}
+
+#mroomout {
+    top: 105px;
+    left: 790px;
+}
+
+#lr-small {
+    position: absolute;
+    top: 224px;
+    left: 10px;
+    width: 110px;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#lr-small:hover {
+    box-shadow: 0px 0px 5px 5px #a02b1f;
+    transition: 0.5s;
+}
+
+#lr-large {
+    position: absolute;
+    top: 15px;
+    left: 170px;
+    width: 500px;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#lr-large:hover {
+    box-shadow: 0px 0px 5px 5px #a02b1f;
+    transition: 0.5s;
+}
+
+#instructions img {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 370px;
+    float: left;
+}
+
+#portrait img {
+    width: 260px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+}
+
+#landscape img {
+    width: 400px;
+    position: absolute;
+    top: 210px;
+    left: 10px;
+}
+
+#pricolors img {
+    position: absolute;
+    top: 170px;
+    left: 70px;
+}
+
+#portrait-d {
+    top: 320px;
+}
+
+#landscape-d {
+    top: 350px;
+}
+
+#pricolors-d {
+    top: 350px;
+}
+
+#crsha-d {
+    top: 350px;
+}
+
+#abs-d {
+    top: 350px;
+}
+
+#stdpainting {
+    position: absolute;
+    top: 160px;
+    left: 690px;
+    cursor: pointer;
+}
+
+#note-th {
+    position:absolute;
+    top:295px;
+    left:450px;
+    width:80px;
+    cursor:pointer;
+}
+
+#drawer {
+    position: absolute;
+    top: 290px;
+    left: 760px;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#note img {
+    width:300px;
+    position:absolute;
+    top:110px;
+    left:40px;
+}
+
+#drawerkey img {
+    left: 40px;
+    position: absolute;
+}
+
+#drawer:hover {
+    box-shadow: 0px 0px 5px 5px #a02b1f;
+    transition: 0.5s;
+}
+
+#abs-painting {
+    width:350px;
+    position: absolute;
+    top:50px;
+    left:240px;
+    opacity: 0.6;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#abs-painting:hover {
+    box-shadow: 0px 0px 5px 5px #a02b1f;
+    transition: 0.5s;
+}
+
+#bdroomdraw-th {
+    position: absolute;
+    width: 60px;
+    top: 370px;
+    left: 690px;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#bdroomdraw-th:hover {
+    box-shadow: 0px 0px 5px 5px #a02b1f;
+    transition: 0.5s;
+}
+
+#fampic img {
+    position: absolute;
+    top:150px;
+    left:60px;
+}
+
+#abstract img {
+    width:400px;
+    position:absolute;
+    top:200px;
+    left:20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+footer a:link {
+    color: #601d1d;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+footer a:visited {
+    color: #601d1d;
+}
+
+footer a:hover {
+    color: #762727;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: #601d1d;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    font-family: 'draconian_typewriterregular';
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.off {
+    visibility: hidden;
+    display: none;
+}
+
+b {
+    color: yellow;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overnight</title>
+
+    <!--CSS Link-->
+    <link type="text/css" href="final.css" rel="stylesheet">
+
+    <!--js links-->
+
+    <!--jQuery link first-->
+    <script src="js/jquery.js"></script>
+
+    <!--Typed link-->
+    <script src="js/typed.js"></script>
+
+    <!-- Custom Javascript Link-->
+    <script type="text/javascript" src="final.js"></script>
+
+</head>
+
+<!--Script-->
+
+<body>
+
+    <div id="script1">
+        <p>--Mom, do I really have to stay at dad’s this weekend?</p>
+        <p>Mom: Of course you do. He’s your father.</p>
+        <p>It’s not like he’s been a father. He’s not even around anymore.</p>
+        <p>Mom: Karen, your father and I have been apart for 5 years, I think its time to get over it.</p>
+        <p>It’s just… he’s really weird. His house is full of his creepy art.</p>
+        <p>Mom: Hey, if it helps him pay his alimony checks, I don’t mind.</p>
+        <p>But you’re not the one staying with him. Why are we going at 10PM anyways?</p>
+        <p>Mom: Sorry dear, but we adults have something called work.--
+        </p>
+    </div>
+
+    <div id="script2">
+        <p>--Mom: Well here we are. Have fun Karen!</p>
+        <p>(Fun? This place looks like a haunted mansion.)</p>
+        <p>Mom, please, just take me home.</p>
+        <p>Mom: You’ll be fine. Ask him about his art. You loved listening to him talk when you were little.</p>
+        <p>That was a long time ago. It’s so awkward between us now.</p>
+        <p>Mom: Come on Karen, give him another chance.</p>
+        <p>Fine. Bye mom…--
+        </p>
+    </div>
+    <div id="script3">
+        <p>--Dad? Daaaad? Are you awake? </p>
+        <p>(I knew coming late was a stupid idea.)</p>
+        <p>Maybe he's in the living room...--
+        </p>
+    </div>
+    <div id="script4">
+        <p>--Dad?</p>
+        <p>Well he's not here either...</p>
+        <p>What's up with these paintings? Their so much creepier than I remember...</p>
+        <p>If he's not here, he better be in his studio.--</p>
+    </div>
+    <div id="script5">
+        <p>--(Is this blood!?)</p>
+        <p>DAD IS THIS SOME KIND OF FUCKING JOKE!? DAD, WHERE ARE YOU!</p>
+        <p>(Upstairs. He's probably just sleeping in his room...)--</p>
+    </div>
+    <div id="script6">
+        <p>--Please, please just be somewhere here...--</p>
+    </div>
+    <div id="script7">
+        <p>--(This was my room...)</p>
+        <p>Looks like Dad cleaned it up.</p>
+        <p>Please be okay...--</p>
+    </div>
+    <div id="script8">
+        <p>--Not here...</p>
+        <p>THE BASEMENT. He's probably just working down there and didn't hear me. Where's the key?--</p>
+    </div>
+    <div id="script9">
+        <p>--Please Dad... Just be down there working on some painting. Please...--</p>
+    </div>
+    <!--Main Menu-->
+    <section id="mainmenu">
+
+        <h5 id="overnight">OVERNIGHT</h5>
+
+        <nav id="menu">
+            <h1 id="start" class="menubutton">START</h1>
+            <h1 id="instructionbtn" class="menubutton">INSTRUCTIONS</h1>
+            <h1 id = "abtgamebtn" class="menubutton">ABOUT THE GAME</h1>
+        </nav>
+
+    </section>
+
+    <!--Instructions-->
+    <section id="instructions" class="definitions">
+        <h3>INSTRUCTIONS</h3>
+        <h5 class="close">X</h5>
+        <ul>
+            <li>Click on clues that are shown with a white feathered highlight.</li>
+            <li>Words that are <b>bolded</b> contain its definition. To access the definition, hover over the word. </li>
+            <li>Arrows indicate rooms that can be accessed.</li>
+            <li>"--" indicate the beginning and end of dialogue.</li>
+        </ul>
+
+        <img src="images/instruction-1.jpg" alt="instruction image 1" />
+        <img src="images/instruction-2.jpg" alt="instruction image 2" />
+        <img src="images/instruction-3.jpg" alt="instruction image 3" />
+    </section>
+    
+    <!--About the Game-->
+    <section id="abtgame" class="definitions">
+        <h3>ABOUT THE GAME</h3>
+        <h5 class="close">X</h5>
+        <br>
+        <p>A horror game meant to teach the player basic art terms. </p>
+        <p>This is for DES 157 at UC Davis and for the ISEA 2016 symposium. </p>
+        <p>The theme I am submitting for is the Game Over - Play Again Y/N category. I kind of took the theme literally and with this project, am trying to combine art and gaming by teaching art through the game. It's still a work in progress. </p>
+    </section>
+
+
+    <!--Dialogue-->
+    <section id="textbox">
+        <p id="firstp" class="hidedialogue"><span id='dialogue1'></span>
+        </p>
+        <p id='secondp' class="hidedialogue"><span id='dialogue2'></span>
+        </p>
+        <p id='thirdp' class="hidedialogue"><span id='dialogue3'></span>
+        </p>
+        <p id='fourthp' class="hidedialogue"><span id='dialogue4'></span>
+        </p>
+        <p id='fifthp' class="hidedialogue"><span id='dialogue5'></span>
+        </p>
+        <p id='sixthp' class="hidedialogue"><span id='dialogue6'></span>
+        </p>
+        <p id='seventhp' class="hidedialogue"><span id='dialogue7'></span>
+        </p>
+        <p id='eighthp' class="hidedialogue"><span id='dialogue8'></span>
+        </p>
+        <p id='ninthp' class="hidedialogue"><span id='dialogue9'></span>
+        </p>
+    </section>
+
+    <!--Intro Video-->
+    <section id="introduction">
+        <button id="skipintro" class="skipbtn">skip</button>
+        <video id="introvid" width="960" height="700">
+            <source src="videos/introvideo.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+        <h2 id="videonext">next</h2>
+    </section>
+
+    <!--Car Scene-->
+    <section id="carscene">
+        <img src="images/carscene-inside.png" alt="car inside" />
+        <img class="nextbtn" id="carnext" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="carh">house</h2>
+    </section>
+
+
+    <!--House Scene-->
+    <section id="house">
+        <img class="upbtn" id="housenext" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="enterh">enter</h2>
+    </section>
+
+    <!--Hallway-->
+    <section id="hallway">
+        <img class="upbtn" id="hallwayup-n" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="uphallin-n">upstairs</h2>
+        <img class="upbtn" id="hallwayup" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="uphallin">upstairs</h2>
+        <img class="upbtn" id="hallwaydown" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="basein">basement</h2>
+        <img class="nextbtn" id="hallwaynext" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="lroomin">living room</h2>
+        <img class="nextbtn" id="hallwaynext-n" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="lroomin-n">living room</h2>
+    </section>
+
+    <!--Living Room-->
+    <section id="livingroom">
+        <img src="images/lroom-smallpainting.png" alt="living room small painting" id="lr-small" />
+
+        <img src="images/lroom-largepainting.png" alt="living room large painting" id="lr-large" />
+
+
+        <img class="upbtn" id="lroomnexts-n" src="images/uparrow.gif" alt="arrow" />
+        <h2 id="studin-n" class="tooltips">studio</h2>
+        <img class="upbtn" id="lroomnexts" src="images/uparrow.gif" alt="arrow" />
+        <h2 id="studin" class="tooltips">studio</h2>
+        <img class="backbtn" id="lroomback" src="images/leftarrow.gif" alt="arrow" />
+        <h2 id="lroomout" class="tooltips">hallway</h2>
+
+    </section>
+
+    <!--Studio-->
+    <section id="studio">
+        <img class="backbtn" id="studioback" src="images/leftarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="studout">living room</h2>
+
+        <img id="stdpainting" src="images/std-painting-th.png" />
+        <img id="note-th" src="images/note-th.png" alt="note thumbnail" />
+    </section>
+
+    <!--Upstairs Hallway-->
+    <section id="uphallway">
+        <img class="upbtn" id="uphallup" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="mroomin">master bedroom</h2>
+        <img class="backbtn" id="uphallback" src="images/leftarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="uphallout">downstairs</h2>
+        <img class="nextbtn" id="uphallnext" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="bdroomin">bedroom</h2>
+
+        <img class="upbtn" id="uphallup-n" src="images/uparrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="mroomin-n">master bedroom</h2>
+        <img class="nextbtn" id="uphallnext-n" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="bdroomin-n">bedroom</h2>
+    </section>
+
+    <!--Master Bedroom-->
+    <section id="masterroom">
+        <img class="nextbtn" id="mbedback" src="images/rightarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="mroomout">hallway</h2>
+
+        <img id="drawer" src="images/mroom-drawer.jpg" alt="drawer" />
+        <img id="abs-painting" src="images/abstract.jpg" alt="abstract painting" />
+    </section>
+
+    <!--Bedroom-->
+    <section id="bedroom">
+        <img class="backbtn" id="bedback" src="images/leftarrow.gif" alt="arrow" />
+        <h2 class="tooltips" id="bdroomout">hallway</h2>
+
+        <img id="bdroomdraw-th" src="images/bedroom-drawing.jpg" alt="bedroom drawing of family" />
+    </section>
+
+    <!--Credits-->
+    <section id="credits">
+        <video id="creditvid" width="960" height="700">
+            <source src="videos/credits.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+        <h2 id="restartgame">Play Again?</h2>
+    </section>
+
+
+
+
+
+
+
+    <!--DESCRIPTIONS-->
+    <section id="portrait" class="definitions">
+        <h3>Portrait</h3>
+        <h5 class="close">X</h5>
+        <img src="images/lroom-smallpainting.png" alt="living room small painting" />
+        <p class="descriptions">"Gross, how does dad come up with this stuff? This <b class="boldd" id="por-bold">portrait</b> totally freaks me out."</p>
+
+        <p class="descriptions" id="portrait-d">portrait: a visual depiction, whether that be a painting, drawing, engraving or photograph, of a person that is usually from the shoulder up.</p>
+    </section>
+
+    <section id="landscape" class="definitions">
+        <h3>Landscape</h3>
+        <h5 class="close">X</h5>
+        <img src="images/lroom-largepainting.png" alt="living room small painting" />
+        <p class="descriptions">"Freaky. It's like that figure is following me. It looks like a <b class="boldd" id="land-bold">landscape</b> painting of the forest we used to go camping at. Dad, please be okay..."</p>
+
+        <p class="descriptions" id="landscape-d">landscape: a depiction of an expanse of scenery. the visual features of an area.</p>
+    </section>
+
+    <section id="pricolors" class="definitions">
+        <h3>Primary Colors</h3>
+        <h5 class="close">X</h5>
+        <img src="images/std-painting.jpg" alt="studio painting with primary colors" />
+        <p class="descriptions">"A face? Looks like dad used <b class="boldd" id="pri-bold">primary colors</b> for this. The way he painted this... it's so... angry"</p>
+
+        <p class="descriptions" id="pricolors-d">primary colors: red, yellow, and blue. these colors can be used to create every other color.</p>
+    </section>
+
+    <section id="drawerkey" class="definitions">
+        <h3>Basement Key</h3>
+        <h5 class="close">X</h5>
+        <img src="images/key.png" alt="basement key" />
+        <p class="descriptions">"The key! Okay, time to head down to the basement... Dad, you better be down there."</p>
+    </section>
+
+    <section id="fampic" class="definitions">
+        <h3>Family Picture</h3>
+        <h5 class="close">X</h5>
+        <img src="images/bedroom-drawing.jpg" alt="family picture" />
+        <p class="descriptions">"Its the family portrait dad drew for me. He told me about <b class="boldd" id="crsha-bold">crosshatching and shading</b>. This was so long ago. Look at us... so happy together... I miss this."</p>
+
+        <p class="descriptions" id="crsha-d">crosshatching: a technique that involves interecting parallel lines to create value/texture
+            <br>
+            <br> shading: a difference in color in a drawing; usually to create the illusion of three-dimensionality or shadow
+        </p>
+    </section>
+
+    <section id="note" class="definitions">
+        <h3>The Note</h3>
+        <h5 class="close">X</h5>
+        <img src="images/note.jpg" alt="note" />
+        <p class="descriptions">March 1st, 2016
+            <br>
+            <br> My thoughts get cloudier day by day. There's a voice in my head telling me to continue. I don't want to! Somebody, please help me! I feel like I'm going to explod...
+            <br>
+            <br> "Voice? Continue what? What's he gotten himself into?"</p>
+    </section>
+
+    <section id="abstract" class="definitions">
+        <h3>Abstract</h3>
+        <h5 class="close">X</h5>
+        <img src="images/abstract.jpg" alt="abstract painting" />
+        <p class="descriptions">"Why would dad keep this <b class="boldd" id="abs-bold">abstract</b> painting above his bed. Seems like a horrible decision."</p>
+
+        <p class="descriptions" id="abs-d">abstract: expressing ideas and emotions by using elements such as colors and lines without attempting to create a realistic picture (merriam-webster)
+        </p>
+    </section>
+
+
+
+
+    <!--AUDIO-->
+
+    <audio id="bgmusic" loop>
+        <source src="audio/ghostpocalypse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+
+
+
+
+</body>
+
+</html>
